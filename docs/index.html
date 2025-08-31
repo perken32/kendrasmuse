@@ -12,8 +12,8 @@
     body {
       margin: 0;
       padding: 2rem 1rem;
-      background-color: #fff;
-      color: #4e2a84;
+      background-color: #fffafc; /* softer white-pink background */
+      color: #b85c8a; /* rose pink text */
       font-family: 'Cormorant Garamond', serif;
       line-height: 1.8;
       display: flex;
@@ -23,11 +23,11 @@
     }
 
     header {
-      background: linear-gradient(135deg, #f9f7ff 0%, #e6e0f8 100%);
+      background: linear-gradient(135deg, #fff0f6 0%, #ffe6f0 100%); /* pink gradient */
       padding: 3rem 2rem 3rem 2rem;
-      border-radius: 12px;
+      border-radius: 16px;
       max-width: 720px;
-      box-shadow: 0 6px 12px rgba(78, 42, 132, 0.1);
+      box-shadow: 0 8px 16px rgba(184, 92, 138, 0.1);
       margin-bottom: 0;
       width: 100%;
       box-sizing: border-box;
@@ -38,13 +38,13 @@
       margin-bottom: 0.75rem;
       font-weight: 700;
       letter-spacing: 2px;
-      color: #4e2a84;
+      color: #b85c8a; /* rosy pink */
       text-transform: lowercase;
     }
 
     .intro {
       font-size: 1.35rem;
-      color: #5c4d8a;
+      color: #a64d75; /* darker pink */
       line-height: 1.9;
       max-width: 680px;
       margin: 0 auto;
@@ -55,7 +55,7 @@
       width: 100%;
       max-width: 720px;
       height: 2px;
-      background: linear-gradient(to right, transparent, #7a68a6, transparent);
+      background: linear-gradient(to right, transparent, #f2a6c1, transparent); /* soft pink gradient */
       margin: 2rem 0 3rem 0;
     }
 
@@ -69,9 +69,9 @@
     }
 
     .socials a {
-      color: #4e2a84;
+      color: #b85c8a;
       text-decoration: none;
-      transition: color 0.3s ease;
+      transition: transform 0.3s ease, color 0.3s ease;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -80,7 +80,8 @@
     }
 
     .socials a:hover {
-      color: #7a68a6;
+      color: #d982aa;
+      transform: scale(1.1); /* whimsical hover */
     }
 
     section {
@@ -91,14 +92,15 @@
 
     h2 {
       margin-bottom: 1rem;
-      border-bottom: 1px solid #d8c9ec;
+      border-bottom: 1px dashed #f2c6d6; /* softer whimsical border */
       padding-bottom: 0.5rem;
       font-size: 1.5rem;
       font-weight: 600;
+      color: #a64d75;
     }
 
     .email-link {
-      color: #4e2a84;
+      color: #b85c8a;
       font-weight: 600;
       text-decoration: none;
       border-bottom: 1px solid transparent;
@@ -109,12 +111,12 @@
     }
 
     .email-link:hover {
-      border-bottom: 1px solid #7a68a6;
+      border-bottom: 1px solid #d982aa;
     }
 
     footer {
       font-size: 0.85rem;
-      color: #aaa;
+      color: #caa0b8;
       margin-top: 2rem;
     }
 
@@ -175,6 +177,14 @@
         <path d="M13 9h3v2h-3v6h-3v-6H7V9h3V7a2 2 0 012-2h2v2h-2v2z"/>
       </svg>
     </a>
+
+    <!-- Patreon -->
+    <a href="https://patreon.com/kendrasmuse" target="_blank" rel="noopener" aria-label="Patreon">
+      <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="6" cy="12" r="4"/>
+        <rect x="14" y="2" width="4" height="20" rx="2"/>
+      </svg>
+    </a>
   </div>
 
   <section>
@@ -199,7 +209,7 @@
     <p>
       Reach out to me through any of my social media pages above or via email:<br/>
       <a href="mailto:perrykendra2@yahoo.com" class="email-link" target="_blank" rel="noopener">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4e2a84" viewBox="0 0 24 24" aria-hidden="true" style="vertical-align: middle;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#b85c8a" viewBox="0 0 24 24" aria-hidden="true" style="vertical-align: middle;">
           <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 2v.01L12 13 4 6.01V6h16ZM4 18V8l7.99 6.99L20 8v10H4Z"/>
         </svg>
       </a>
