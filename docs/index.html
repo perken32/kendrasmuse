@@ -21,7 +21,8 @@
     text-align: center;
   }
 
-  header {
+  /* HEADER */
+  .hero {
     max-width: 720px;
     width: 100%;
     margin-bottom: 1.5rem;
@@ -30,16 +31,38 @@
   h1 {
     font-size: 2.6rem;
     letter-spacing: 2px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     color: #5c3a45;
     font-weight: 600;
   }
 
-  .quote {
-    font-size: 1.55rem;
+  .tagline {
+    font-size: 1.2rem;
     color: #8a5a6a;
     font-style: italic;
-    margin-bottom: 2rem;
+    margin-top: 0.3rem;
+  }
+
+  /* FADE IN ANIMATION */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeUp 1.2s ease forwards;
+  }
+
+  .delay-1 {
+    animation-delay: 0.6s;
+  }
+
+  .delay-2 {
+    animation-delay: 1.2s;
+  }
+
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .divider {
@@ -71,6 +94,30 @@
     border: none;
   }
 
+  .snippet {
+    font-size: 1.05rem;
+    color: #5c3a45;
+    margin-bottom: 1rem;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reflection-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #8a5a6a;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+  }
+
+  .reflection-link:hover {
+    color: #d9a6b8;
+    border-bottom: 1px solid #d9a6b8;
+  }
+
   .socials {
     display: flex;
     justify-content: center;
@@ -99,24 +146,46 @@
 
 <body>
 
-<header>
-  <h1>kendrasmuse</h1>
+<!-- HEADER -->
+<header class="hero">
+  <h1 class="fade-in">kendrasmuse</h1>
 
-  <div class="quote">
-    “The moment of truth speaks through clarity and peace.”
+  <div class="tagline fade-in delay-1">
+    an ancient sacrament of becoming
+  </div>
+
+  <div class="tagline fade-in delay-2">
+    a vessel of emerging truth
   </div>
 </header>
 
 <div class="divider"></div>
 
+<!-- MUSE REFLECTIONS -->
 <section>
   <h2>Muse Reflections</h2>
 
+  <!-- WRITING FIRST -->
+  <p class="snippet">
+    Truths matter and lies are bad—but what if lies are the truth’s protector?
+    What if truth chooses to remain hidden, and lies become a veil it weaves to protect itself?
+  </p>
+
+  <a class="reflection-link"
+     href="https://open.substack.com/pub/kendrasmuse/p/reality-of-truths-and-lies?r=gugne&utm_medium=ios"
+     target="_blank">
+     Read the Reflection
+  </a>
+
+  <div class="divider"></div>
+
+  <!-- VIDEO SECOND -->
   <iframe src="https://www.youtube.com/embed/" allowfullscreen></iframe>
 </section>
 
 <div class="divider"></div>
 
+<!-- CONNECT -->
 <section>
   <h2>Connect</h2>
 
